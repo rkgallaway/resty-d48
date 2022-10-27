@@ -4,7 +4,7 @@ class Results extends React.Component {
   render() {
     return (
       <section>
-        <pre>{this.props.data ? JSON.stringify(this.props.data, undefined, 2) : null}</pre>
+        <pre data-testid="results-pre">{this.props.data ? JSON.stringify(this.props.data, undefined, 2) : null}</pre>
       </section>
     );
   }
